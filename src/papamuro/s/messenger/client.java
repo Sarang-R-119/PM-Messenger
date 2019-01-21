@@ -7,7 +7,6 @@ package papamuro.s.messenger;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import javax.swing.JOptionPane;
@@ -132,7 +131,7 @@ public class client extends javax.swing.JFrame {
         String message="";
         
         try{
-            s= new Socket("172.31.100.9",1201);
+            s= new Socket("172.31.0.1",1201);
             
             dis= new DataInputStream(s.getInputStream());
             dos= new DataOutputStream(s.getOutputStream());
